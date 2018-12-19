@@ -114,7 +114,7 @@ window.onload = function() {
 }
 
 
-commentBox('5642453138800640-proj', {
+commentBox(5642453138800640-proj, {
     backgroundColor: '#fff',
     textColor: 'navy'
 });
