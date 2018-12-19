@@ -113,8 +113,85 @@ window.onload = function() {
   }, 500);
 }
 
+const playlist = {
+    name: 'Thank You',
+    description: 'See You In 2019!',
+    songs: [{
+        name: 'Susana',
+        artists: ['Thanks For Your Encouragement & Support Throughout These First 3 Months'],  
+      },
+      
+    ]
+  };
 
-commentBox(5642453138800640-proj, {
-    backgroundColor: '#fff',
-    textColor: 'navy'
-});
+  const objectToHTML = (song) => {
+    return `<div class='row mb-2'style='overflow:auto'>
+      <div class='col-11'>
+        <p class='mb-0 mt-1 song-name style='font-color:black;'>${song.name}</p>
+        <p class='my-0 song-artists'>${song.artists}</p>
+      </div>
+    </div>`;
+  }
+
+  const render = (playlist) => {
+
+    const title = document.querySelector('.display-4');
+    title.innerText = playlist.name;
+  
+    const desc = document.querySelector('.lead');
+    desc.innerText = playlist.description;
+  
+    const song_list = document.querySelector('.song-list');
+  
+    let combinedHTML = '';
+  
+    for (let i = 0; i < playlist.songs.length; i++) {
+      combinedHTML += objectToHTML(playlist.songs[i]);
+    }
+    song_list.innerHTML = combinedHTML;
+    console.log(combinedHTML);
+  }
+  
+  render(playlist);
+  
+  
+  const input = document.querySelector('.js-input');
+  input.addEventListener('input', () => {
+    
+    const newList = {
+        name: 'Thank You',
+        description: 'See You In 2019!',
+    }
+  
+    let arr = [];
+  
+    
+  
+    for (let i = 0; i < playlist.songs.length; i++) {
+  
+      let sName = playlist.songs[i].name;
+      
+      let lowerA = playlist.songs[i].artists.toString().toLowerCase();
+      let lowerS = sName.toLowerCase();
+      let lowerV = input.value.toLowerCase();
+  
+  
+      if (lowerS.includes(lowerV) === true) {
+          arr.push(playlist.songs[i]);
+      }
+  
+      else if (lowerA.includes(lowerV) === true) {
+        arr.push(playlist.songs[i]);
+    }
+  
+    }
+  
+    newList['name'] = playlist.name;
+    newList['description'] = playlist.description;
+    newList['songs'] = arr;
+  
+  
+    render(newList);
+  
+  });
+  
