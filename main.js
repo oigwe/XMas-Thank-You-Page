@@ -114,10 +114,7 @@ window.onload = function () {
 const playlist = {
     name: 'Thank You',
     description: 'See You In 2019!',
-    songs: [{
-            name: 'Susana',
-            artists: ['Thanks For Your Encouragement & Support Throughout These First 3 Months'],
-        },
+    songs: [
         {
             name: "Joyce",
             artists: [" Thank you for your patience when I’ve asked to not give up on me while I try to push further. Thank you for your kindness and for the hard effort you put into teaching us the material. "],
@@ -182,6 +179,19 @@ const playlist = {
             name: 'Everyone',
             artists: ["Thanks you for all your hardwork and support, here's a great new year. Happy Holidays!"],
         },
+        {
+            name: 'Susana',
+            message: ["Thank you for the conversations that we've had and all your advice you 've given me"],
+        }, {
+            name: 'Taq',
+            message: ['Over the last couple of months it has been inspiring to learn from someone with such passion'],
+        }, {
+            name: 'Liz',
+            message: ['Your support and care for everyone in class has indispensable for our success and I am grateful to have you as our PM '],
+        },{
+            name: 'Susana',
+            message: ['Thanks For Your Encouragement & Support Throughout These First 3 Months'],
+        }
 
     ]
 };
