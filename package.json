@@ -1,0 +1,22 @@
+{
+  "name": "xmasthanks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oigwe/XMas-Thank-You-Page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oigwe/XMas-Thank-You-Page/issues"
+  },
+  "homepage": "https://github.com/oigwe/XMas-Thank-You-Page#readme",
+  "dependencies": {
+    "commentbox.io": "^2.0.0"
+  }
+}
