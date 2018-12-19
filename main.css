@@ -1,0 +1,4 @@
+commentBox('my-project-id', {
+    backgroundColor: '#000',
+    textColor: '#fff'
+});
