@@ -116,13 +116,58 @@ window.onload = function() {
 const playlist = {
     name: 'Thank You',
     description: 'See You In 2019!',
-    songs: [{
-        name: 'Susana',
+    songs: [
+        {name: 'Susana',
         artists: ['Thanks For Your Encouragement & Support Throughout These First 3 Months'],  
-      },
+      }, 
+      { name:"Joyce",
+        artists:[" Thank you for your patience when I’ve asked to not give up on me while I try to push further. Thank you for your kindness and for the hard effort you put into teaching us the material. "], 
+    },
+        { name: "Michael",
+        artists: [" Thank you for your brotherhood. For looking out when we need to focus through class and making sure that we are on track. Thank you for your transparency as a person where you help those around you be comfortable because of your personality. Thank you for your extra tutoring times when you are willing and able to."], 
+},
+        { name: "Mo",
+        artists: ["Thank you for making the material looking easier than it may seem. Thank you for your soft patience towards us and for making the notes from GitHub interesting as we struggle through the material. Thank you for showing up the extra days you do not teach to help us individually."] , 
+},
+        { name: "Taq",
+          artists: ["Thank you for the effort you put in when we provide feedback. Thank you for teaching us at a level where you believe we may grasp if we are to push pass our presumed capabilities. Thank you for your encouragement."] , 
+},  
+        { name: "Carlos",
+        artists: [ " Thank you for your boldness. For taking one for your team when you covered for Taq while he reviewed css for the exam.  "], 
+},   
+        { name: "Liz",
+        artists : [ "Thank you all of the efforts you put. You really go above and beyond for us. You are a really genuine person who through your works your genuineness is shown. I appreciate all of the efforts and care you put into Pursuit. Thank you for building us up. "],
+},
+{
+    name: 'Taq',
+    artists: ['You must be tired of us by now but, thank you for your time and patience with us.'],
+  },
+
+{
+    name: 'Mo',
+    artists: ['Thank you for your time and effort'],
+  },
+
+{
+    name: 'Michael',
+    artists: ['Sorry for all the bad code you had to grade'],
+  },
+    
+{
+    name: 'Liz',
+    artists: ['Best PM of all time!'],
+  },
+  {name:'Liz',
+  artists:[ `Thank you so much for your encouragement and your compassion, for
+  being always there to push us forward whenever we are feeling down. `] }, 
+  {name:'Taq',
+  artists:[ `Thank you for all of your efforts to teach us something new, it takes someone truly passionate to teach the way you do(and for the Munchkins)`] },
+  {name: 'Mo', 
+  artists:[`Thank you for all of your patience and incredible support you have shown us. Time and time again it goes on to show how much you believe in us`] },
+  {name: 'Carlos',
+  artists:[ `Thank you for putting things into perspective for us, for being always upfront and keeping things real`] },	 
       
-    ]
-  };
+]};
 
   const objectToHTML = (song) => {
     return `<div class='row mb-2'style='overflow:auto'>
