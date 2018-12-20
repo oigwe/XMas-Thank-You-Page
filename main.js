@@ -210,7 +210,7 @@ const playlist = {
         },
         {
             name: 'Liz',
-            message: ['Thank you for being the best PM and for all your continuous support. Pursuit would not be the same without you!'],
+            artists: ['Thank you for being the best PM and for all your continuous support. Pursuit would not be the same without you!'],
         },
     ]
 };
