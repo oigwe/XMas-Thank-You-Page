@@ -204,6 +204,14 @@ const playlist = {
             name:'Carlos',
             artists:['Thanks for being friendly and keeping a postive and charismatic attitude in our learning environment. We feel like you are not just our TA, but a friend that we can trust and more importantly share corny jokes with and still get a postive reaction. Thank you for being a part of our community']
         },
+        {
+            name: 'To Everyone',
+            artists: ["To Everyone, Thank you for your time, energy and support. The past 3 months has been an amazing journey and I wouldn't trade this experience for anything."]
+        },
+        {
+            name: 'Liz',
+            message: ['Thank you for being the best PM and for all your continuous support. Pursuit would not be the same without you!'],
+        },
     ]
 };
 
