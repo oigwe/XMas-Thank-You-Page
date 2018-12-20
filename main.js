@@ -212,7 +212,31 @@ const playlist = {
             name: 'Liz',
             artists: ['Thank you for being the best PM and for all your continuous support. Pursuit would not be the same without you!'],
         },
-    ]
+        {
+            name: 'Susana',
+            artists: ['Thank you for being one bawse ass bitch! Very grateful for your presence!'],  
+          },
+    {
+            name: 'Michael',
+            artists: ['Thank for your calm and patient approach to code! Thanks for your time and your advice!'],  
+          },
+    {
+            name: 'Joyce',
+            artists: ['Thanks for all your encouragement and reminders to trust in myself. I’m so grateful to have you as a TA. You’re a bawse!'],  
+          },
+    {
+            name: 'Carlos',
+            artists: ['Thank you for all the extra hours you put in trying to help us understand the material. You’re a real one!'],  
+          },
+    {
+            name: 'Taq',
+            artists: ['Thank you so much for all the insight you provide. We’re lucky to be able to learn from you!'],  
+          },
+    {
+            name: 'Mo',
+            artists: ['Thank you for always trying to break everything down for us into simple terms. You’re very reassuring and it’s much appreciated!'],  
+          },
+        ]    
 };
 
 const objectToHTML = (song) => {
