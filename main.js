@@ -194,13 +194,16 @@ const playlist = {
         },
         {
             name: 'Michael',
-            message: ["Another sorry for the bad code you've had to grade, unless it gave you some laughs.  Thanks for keeping a poker face no matter what I say"],
+            artists: ["Another sorry for the bad code you've had to grade, unless it gave you some laughs.  Thanks for keeping a poker face no matter what I say"],
           },
           {
             name: 'Carlos',
-            message: ['Much appreciation for your dedication and empathy in helping me outside of class.'],
+            artists: ['Much appreciation for your dedication and empathy in helping me outside of class.'],
           },
-
+          {
+            name:'Carlos',
+            artists:['Thanks for being friendly and keeping a postive and charismatic attitude in our learning environment. We feel like you are not just our TA, but a friend that we can trust and more importantly share corny jokes with and still get a postive reaction. Thank you for being a part of our community']
+        },
     ]
 };
 
