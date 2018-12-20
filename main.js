@@ -1,8 +1,7 @@
-var Snowflake = (function () {
-
+const Snowflake = (function () {
     var flakes;
-    var flakesTotal = 250;
-    var wind = 0;
+    const flakesTotal = 250;
+    const wind = 0;
     var mouseX;
     var mouseY;
 
@@ -43,8 +42,8 @@ var Snowflake = (function () {
             this.melt = false;
         }
 
-        var dx = mouseX - this.x;
-        var dy = mouseY - this.y;
+        const dx = mouseX - this.x;
+        const dy = mouseY - this.y;
         this.hit = !this.melt && this.y < mouseY && dx * dx + dy * dy < 2400;
     };
 
@@ -56,8 +55,8 @@ var Snowflake = (function () {
     };
 
     function update() {
-        for (var i = flakes.length; i--;) {
-            var flake = flakes[i];
+        for (let i = flakes.length; i--;) {
+            const flake = flakes[i];
             flake.move();
             flake.draw();
         }
@@ -67,9 +66,9 @@ var Snowflake = (function () {
     Snowflake.init = function (container) {
         flakes = [];
 
-        for (var i = flakesTotal; i--;) {
-            var size = (Math.random() + 0.2) * 12 + 1;
-            var flake = new Snowflake(
+        for (let i = flakesTotal; i--;) {
+            const size = (Math.random() + 0.2) * 12 + 1;
+            const flake = new Snowflake(
                 size,
                 Math.random() * window.innerWidth,
                 Math.random() * window.innerHeight,
@@ -111,163 +110,162 @@ window.onload = function () {
     }, 500);
 }
 
-const playlist = {
+const thanks = {
     name: 'Thank You',
     description: 'See You In 2019!',
-    songs: [
-        {
+    dedications: [{
             name: "Joyce",
-            artists: [" Thank you for your patience when I’ve asked to not give up on me while I try to push further. Thank you for your kindness and for the hard effort you put into teaching us the material. "],
+            message: [" Thank you for your patience when I’ve asked to not give up on me while I try to push further. Thank you for your kindness and for the hard effort you put into teaching us the material. "],
         },
         {
             name: "Michael",
-            artists: [" Thank you for your brotherhood. For looking out when we need to focus through class and making sure that we are on track. Thank you for your transparency as a person where you help those around you be comfortable because of your personality. Thank you for your extra tutoring times when you are willing and able to."],
+            message: [" Thank you for your brotherhood. For looking out when we need to focus through class and making sure that we are on track. Thank you for your transparency as a person where you help those around you be comfortable because of your personality. Thank you for your extra tutoring times when you are willing and able to."],
         },
         {
             name: "Mo",
-            artists: ["Thank you for making the material looking easier than it may seem. Thank you for your soft patience towards us and for making the notes from GitHub interesting as we struggle through the material. Thank you for showing up the extra days you do not teach to help us individually."],
+            message: ["Thank you for making the material looking easier than it may seem. Thank you for your soft patience towards us and for making the notes from GitHub interesting as we struggle through the material. Thank you for showing up the extra days you do not teach to help us individually."],
         },
         {
             name: "Taq",
-            artists: ["Thank you for the effort you put in when we provide feedback. Thank you for teaching us at a level where you believe we may grasp if we are to push pass our presumed capabilities. Thank you for your encouragement."],
+            message: ["Thank you for the effort you put in when we provide feedback. Thank you for teaching us at a level where you believe we may grasp if we are to push pass our presumed capabilities. Thank you for your encouragement."],
         },
         {
             name: "Carlos",
-            artists: [" Thank you for your boldness. For taking one for your team when you covered for Taq while he reviewed css for the exam.  "],
+            message: [" Thank you for your boldness. For taking one for your team when you covered for Taq while he reviewed css for the exam.  "],
         },
         {
             name: "Liz",
-            artists: ["Thank you all of the efforts you put. You really go above and beyond for us. You are a really genuine person who through your works your genuineness is shown. I appreciate all of the efforts and care you put into Pursuit. Thank you for building us up. "],
+            message: ["Thank you all of the efforts you put. You really go above and beyond for us. You are a really genuine person who through your works your genuineness is shown. I appreciate all of the efforts and care you put into Pursuit. Thank you for building us up. "],
         },
         {
             name: 'Taq',
-            artists: ['You must be tired of us by now but, thank you for your time and patience with us.'],
+            message: ['You must be tired of us by now but, thank you for your time and patience with us.'],
         },
 
         {
             name: 'Mo',
-            artists: ['Thank you for your time and effort'],
+            message: ['Thank you for your time and effort'],
         },
 
         {
             name: 'Michael',
-            artists: ['Sorry for all the bad code you had to grade'],
+            message: ['Sorry for all the bad code you had to grade'],
         },
 
         {
             name: 'Liz',
-            artists: ['Best PM of all time!'],
+            message: ['Best PM of all time!'],
         },
         {
             name: 'Liz',
-            artists: [`Thank you so much for your encouragement and your compassion, for
+            message: [`Thank you so much for your encouragement and your compassion, for
   being always there to push us forward whenever we are feeling down. `]
         },
         {
             name: 'Taq',
-            artists: [`Thank you for all of your efforts to teach us something new, it takes someone truly passionate to teach the way you do(and for the Munchkins)`]
+            message: [`Thank you for all of your efforts to teach us something new, it takes someone truly passionate to teach the way you do(and for the Munchkins)`]
         },
         {
             name: 'Mo',
-            artists: [`Thank you for all of your patience and incredible support you have shown us. Time and time again it goes on to show how much you believe in us`]
+            message: [`Thank you for all of your patience and incredible support you have shown us. Time and time again it goes on to show how much you believe in us`]
         },
         {
             name: 'Carlos',
-            artists: [`Thank you for putting things into perspective for us, for being always upfront and keeping things real`]
+            message: [`Thank you for putting things into perspective for us, for being always upfront and keeping things real`]
         },
         {
             name: 'Everyone',
-            artists: ["Thanks you for all your hardwork and support, here's a great new year. Happy Holidays!"],
+            message: ["Thanks you for all your hardwork and support, here's a great new year. Happy Holidays!"],
         },
         {
             name: 'Susana',
-            artists: ["Thank you for the conversations that we've had and all your advice you 've given me"],
+            message: ["Thank you for the conversations that we've had and all your advice you 've given me"],
         }, {
             name: 'Taq',
-            artists: ['Over the last couple of months it has been inspiring to learn from someone with such passion'],
+            message: ['Over the last couple of months it has been inspiring to learn from someone with such passion'],
         }, {
             name: 'Liz',
-            artists: ['Your support and care for everyone in class has indispensable for our success and I am grateful to have you as our PM '],
-        },{
+            message: ['Your support and care for everyone in class has indispensable for our success and I am grateful to have you as our PM '],
+        }, {
             name: 'Susana',
-            artists: ['Thanks For Your Encouragement & Support Throughout These First 3 Months'],
+            message: ['Thanks For Your Encouragement & Support Throughout These First 3 Months'],
         },
         {
             name: 'Michael',
-            artists: ["Another sorry for the bad code you've had to grade, unless it gave you some laughs.  Thanks for keeping a poker face no matter what I say"],
-          },
-          {
+            message: ["Another sorry for the bad code you've had to grade, unless it gave you some laughs.  Thanks for keeping a poker face no matter what I say"],
+        },
+        {
             name: 'Carlos',
-            artists: ['Much appreciation for your dedication and empathy in helping me outside of class.'],
-          },
-          {
-            name:'Carlos',
-            artists:['Thanks for being friendly and keeping a postive and charismatic attitude in our learning environment. We feel like you are not just our TA, but a friend that we can trust and more importantly share corny jokes with and still get a postive reaction. Thank you for being a part of our community']
+            message: ['Much appreciation for your dedication and empathy in helping me outside of class.'],
+        },
+        {
+            name: 'Carlos',
+            message: ['Thanks for being friendly and keeping a postive and charismatic attitude in our learning environment. We feel like you are not just our TA, but a friend that we can trust and more importantly share corny jokes with and still get a postive reaction. Thank you for being a part of our community']
         },
         {
             name: 'To Everyone',
-            artists: ["To Everyone, Thank you for your time, energy and support. The past 3 months has been an amazing journey and I wouldn't trade this experience for anything."]
+            message: ["To Everyone, Thank you for your time, energy and support. The past 3 months has been an amazing journey and I wouldn't trade this experience for anything."]
         },
         {
             name: 'Liz',
-            artists: ['Thank you for being the best PM and for all your continuous support. Pursuit would not be the same without you!'],
+            message: ['Thank you for being the best PM and for all your continuous support. Pursuit would not be the same without you!'],
         },
         {
             name: 'Susana',
-            artists: ['Thank you for being one bawse ass bitch! Very grateful for your presence!'],  
-          },
-    {
+            message: ['Thank you for being one bawse ass bitch! Very grateful for your presence!'],
+        },
+        {
             name: 'Michael',
-            artists: ['Thank for your calm and patient approach to code! Thanks for your time and your advice!'],  
-          },
-    {
+            message: ['Thank for your calm and patient approach to code! Thanks for your time and your advice!'],
+        },
+        {
             name: 'Joyce',
-            artists: ['Thanks for all your encouragement and reminders to trust in myself. I’m so grateful to have you as a TA. You’re a bawse!'],  
-          },
-    {
+            message: ['Thanks for all your encouragement and reminders to trust in myself. I’m so grateful to have you as a TA. You’re a bawse!'],
+        },
+        {
             name: 'Carlos',
-            artists: ['Thank you for all the extra hours you put in trying to help us understand the material. You’re a real one!'],  
-          },
-    {
+            message: ['Thank you for all the extra hours you put in trying to help us understand the material. You’re a real one!'],
+        },
+        {
             name: 'Taq',
-            artists: ['Thank you so much for all the insight you provide. We’re lucky to be able to learn from you!'],  
-          },
-    {
+            message: ['Thank you so much for all the insight you provide. We’re lucky to be able to learn from you!'],
+        },
+        {
             name: 'Mo',
-            artists: ['Thank you for always trying to break everything down for us into simple terms. You’re very reassuring and it’s much appreciated!'],  
-          },
-        ]    
+            message: ['Thank you for always trying to break everything down for us into simple terms. You’re very reassuring and it’s much appreciated!'],
+        },
+    ]
 };
 
-const objectToHTML = (song) => {
+const objectToHTML = (dedications1) => {
     return `<div class='row mb-2'style='overflow:auto'>
       <div class='col-11'>
-        <p class='mb-0 mt-1 song-name' style="font-weight:bold">${song.name}</p>
-        <p class='my-0 song-artists'>${song.artists}</p>
+        <p class='mb-0 mt-1 song-name' style="font-weight:bold">${dedications1.name}</p>
+        <p class='my-0 song-artists'>${dedications1.message}</p>
       </div>
     </div>`;
 }
 
-const render = (playlist) => {
+const render = (thanks) => {
 
     const title = document.querySelector('.display-4');
-    title.innerText = playlist.name;
+    title.innerText = thanks.name;
 
     const desc = document.querySelector('.lead');
-    desc.innerText = playlist.description;
+    desc.innerText = thanks.description;
 
-    const song_list = document.querySelector('.song-list');
+    const song_list = document.querySelector('.thanks-list');
 
     let combinedHTML = '';
 
-    for (let i = 0; i < playlist.songs.length; i++) {
-        combinedHTML += objectToHTML(playlist.songs[i]);
+    for (let i = 0; i < thanks.dedications.length; i++) {
+        combinedHTML += objectToHTML(thanks.dedications[i]);
     }
     song_list.innerHTML = combinedHTML;
     console.log(combinedHTML);
 }
 
-render(playlist);
+render(thanks);
 
 
 const input = document.querySelector('.js-input');
@@ -282,25 +280,25 @@ input.addEventListener('input', () => {
 
 
 
-    for (let i = 0; i < playlist.songs.length; i++) {
+    for (let i = 0; i < thanks.dedications.length; i++) {
 
-        let sName = playlist.songs[i].name;
+        let sName = thannks.dedications[i].name;
 
-        let lowerA = playlist.songs[i].artists.toString().toLowerCase();
+        let lowerA = thanks.dedications[i].message.toString().toLowerCase();
         let lowerS = sName.toLowerCase();
         let lowerV = input.value.toLowerCase();
 
 
         if (lowerS.includes(lowerV) === true) {
-            arr.push(playlist.songs[i]);
+            arr.push(thanks.dedications[i]);
         } else if (lowerA.includes(lowerV) === true) {
-            arr.push(playlist.songs[i]);
+            arr.push(thanks.dedications[i]);
         }
 
     }
 
-    newList['name'] = playlist.name;
-    newList['description'] = playlist.description;
+    newList['name'] = thanks.name;
+    newList['description'] = thanks.description;
     newList['songs'] = arr;
 
 
