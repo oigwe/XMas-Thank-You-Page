@@ -196,6 +196,10 @@ const playlist = {
             name: 'Michael',
             message: ["Another sorry for the bad code you've had to grade, unless it gave you some laughs.  Thanks for keeping a poker face no matter what I say"],
           },
+          {
+            name: 'Carlos',
+            message: ['Much appreciation for your dedication and empathy in helping me outside of class.'],
+          },
 
     ]
 };
