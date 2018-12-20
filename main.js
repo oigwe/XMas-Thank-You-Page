@@ -181,17 +181,21 @@ const playlist = {
         },
         {
             name: 'Susana',
-            message: ["Thank you for the conversations that we've had and all your advice you 've given me"],
+            artists: ["Thank you for the conversations that we've had and all your advice you 've given me"],
         }, {
             name: 'Taq',
-            message: ['Over the last couple of months it has been inspiring to learn from someone with such passion'],
+            artists: ['Over the last couple of months it has been inspiring to learn from someone with such passion'],
         }, {
             name: 'Liz',
-            message: ['Your support and care for everyone in class has indispensable for our success and I am grateful to have you as our PM '],
+            artists: ['Your support and care for everyone in class has indispensable for our success and I am grateful to have you as our PM '],
         },{
             name: 'Susana',
-            message: ['Thanks For Your Encouragement & Support Throughout These First 3 Months'],
-        }
+            artists: ['Thanks For Your Encouragement & Support Throughout These First 3 Months'],
+        },
+        {
+            name: 'Michael',
+            message: ["Another sorry for the bad code you've had to grade, unless it gave you some laughs.  Thanks for keeping a poker face no matter what I say"],
+          },
 
     ]
 };
